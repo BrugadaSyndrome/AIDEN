@@ -1,0 +1,23 @@
+{{ define "header.html" }}
+<header>
+    <nav class="bg-blue-500 border-4 border-slate-950">
+        <div class="mx-auto max-w-full">
+            <div class="flex h-20 items-center justify-between">
+                <div class="flex flex-1 items-end justify-start font-pixel-splitter">
+                    <div class="flex h-20 flex-shrink-0 items-center text-slate-50 border-slate-950 border-r-4 px-8">
+                        <a href="/">
+                            <h1 class="flex text-xl pl-1">project</h1>
+                            <h1 class="flex text-5xl">AIDEN</h1>
+                        </a>
+                    </div>
+                    {{ if .aidenMessage }}
+                    <div class="flex flex-shrink-0 text-slate-50 text-2xl pl-2">
+                        <h3>{{ .aidenMessage }}</h3>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+{{ end }}
