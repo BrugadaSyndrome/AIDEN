@@ -1,0 +1,31 @@
+{{ define "index.html" }}
+<!DOCTYPE html>
+<html lang="en">
+    {{ template "head.html" . }}
+    <body class="flex flex-col h-screen">
+    {{ template "header.html" . }}
+
+    <main class="flex-grow bg-slate-50 font-slate-950 py-4 px-8">
+        <h3 class="fw-bold font-pixel-splitter">What is AIDEN?</h3>
+        <p class="fw-normal">AIDEN stands for <b>A</b>rtifical <b>I</b>ntelligence <b>D</b>istributed <b>En</b>gine. AIDEN is a program that allows you to play games against an AI that is powered by a cluster of computers.</p>
+
+        <h3 class="fw-bold font-pixel-splitter pt-4">Pick a game</h3>
+        <div>
+            <ul class="d-grid grid gap-6 lg:grid-cols-3 sm:grid-cols-1 text-slate-50 text-xl text-center">
+                <a href="/tictactoe">
+                    <li class="rounded-lg col-span-1 px-4 py-2 shadow bg-blue-500 border-4 border-slate-950 hover:font-pixel-splitter hover:bg-blue-700 align-middle">TicTacToe</li>
+                </a>
+                <a href="/checkers">
+                    <li class="rounded-lg col-span-1 px-4 py-2 shadow bg-blue-500 border-4 border-slate-950 hover:font-pixel-splitter hover:bg-blue-700 align-middle">Checkers</li>
+                </a>
+                <a href="/chess">
+                    <li class="rounded-lg col-span-1 px-4 py-2 shadow bg-blue-500 border-4 border-slate-950 hover:font-pixel-splitter hover:bg-blue-700 align-middle">Chess</li>
+                </a>
+            </ul>
+        </div>
+    </main>
+
+    {{ template "footer.html" . }}
+    </body>
+</html>
+{{ end }}
