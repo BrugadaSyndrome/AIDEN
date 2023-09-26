@@ -1,6 +1,6 @@
 module DistributedAI
 
-go 1.19
+go 1.21.1
 
 require github.com/BrugadaSyndrome/bslogger v0.2.3
 
